@@ -1,4 +1,4 @@
-# SC1015 Mini-Project
+# SC1015 Mini Project
 
 School of Computer Science & Engineering \
 Nanyang Technology University \
