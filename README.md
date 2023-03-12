@@ -5,7 +5,7 @@ Nanyang Technology University
 Lab Group: A140
 Team: 8
 
-Contributors:
+Contributors
 1. 
 2.
 3.
