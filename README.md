@@ -1,8 +1,8 @@
 # SC1015 Mini-Project
 
-School of Computer Science & Engineering
-Nanyang Technology University
-Lab Group: A140
+School of Computer Science & Engineering \
+Nanyang Technology University \
+Lab Group: A140 \
 Team: 8
 
 Contributors
