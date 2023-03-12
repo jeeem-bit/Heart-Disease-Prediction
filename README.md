@@ -6,9 +6,9 @@ Lab Group: A140
 Team: 8
 
 Contributors
-1. 
-2.
-3.
+1. <insert name here>
+2. <insert name here>
+3. <insert name here>
 
 ---
 ### Description
