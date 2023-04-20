@@ -16,11 +16,11 @@ This project aims to predict the presence of heart rate in individuals using the
 ---
 ### Table of Contents
 1. Problem Definition
-2.
-3.
-4.
-5.
-6.
+2. Exploratory Data Analysis (EDA)
+3. Data Cleaning
+4. Model Selection
+5. Feature Selection
+6. Predictions
 
 ---
 ### 1. Problem Definition
