@@ -15,6 +15,10 @@ Contributors
 This project aims to predict the presence of heart disease in individuals using the [Heart Disease Dataset](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset). This repository contains the source code (Jupyter Notebook `.ipynb` files), dataset, data description text file, and the final video presentation.
 
 ---
+### Video Presentation
+The video presentation can be found [here](https://www.youtube.com/watch?v=fL9KKVrMRds)
+
+---
 ### Table of Contents
 1. Problem Definition
 2. Data Exploration
