@@ -5,7 +5,7 @@ Nanyang Technology University \
 Lab Group: A140 \
 Team: 8
 
-Contributors
+### Contributors
 1. Aaron Jerome Lim Li Yang (@paaronoia) - Script, Video Editor, Presenter
 2. Brendan Yap Ming Thye
 3. Chia Jia En
