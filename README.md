@@ -6,9 +6,9 @@ Lab Group: A140 \
 Team: 8
 
 Contributors
-1. Aaron Jerome Lim Li Yang
-2. Brendan Yap Ming Thye
-3. Chia Jia En
+1. @paaronoia (Aaron Jerome Lim Li Yang) - Script, Slides, Video Editor, Presenter
+2. @Brenz2000 (Brendan Yap Ming Thye) - Data Exploration, EDA, Data Preparation, Model Selection, Model Prediction, Data-driven Insights and Recommendations
+3. @jjeennn (Chia Jia En) - EDA, Model Selection, Script, Slides
 
 ---
 ### Project Description
@@ -20,16 +20,17 @@ The video presentation can be found [here](https://www.youtube.com/watch?v=fL9KK
 
 ---
 ### Table of Contents
-1. Problem Definition
-2. Data Exploration
-3. Exploratory Data Analysis (EDA)
-4. Data Preparation
-5. Model Selection
-6. Model Prediction
-7. Data Driven Insights & Recommendations
-8. References
+1. [Problem Definition](#problem_definition)
+2. [Data Exploration](#de)
+3. [Exploratory Data Analysis (EDA)](#eda)
+4. [Data Preparation](#dp)
+5. [Model Selection](#ms)
+6. [Model Prediction](#mp)
+7. [Data Driven Insights & Recommendations](#ddir)
+8. [References](#ref)
 
 ---
+<a name="problem_definition"></a>
 ### 1. Problem Definition
 According to the World Health Organization, heart disease is the leading cause of death worldwide, causing 17.9 million deaths annually. Similarly, cardiovascular disease is prevalent in Singapore, as 21 people die from cardiovascular disease every day, accounting for 32% of deaths in 2021, according to the Singapore Heart Foundation. Like all other diseases, early detection of disease allows for early intervention and a higher chance of survival. As such, our group aims to accurately predict heart disease in any individual and fight against this silent killer.
 
@@ -37,7 +38,8 @@ According to the World Health Organization, heart disease is the leading cause o
 **Problem Statement:** Predicting a Patient's Propensity towards developing Heart Disease
 
 ---
-### 2. Data Exploration
+<a name="de"></a>
+### 2. [Data Exploration](https://github.com/Brenz2000/SC1015-Mini-Project/blob/main/1_DataExploration_EDA.ipynb)
 We first performed a simple data exploration on the Heart Disease dataset to get a glimpse of the 14 features and 1025 samples we are working with. 
 
 From the `data_description.txt` file, the features can be defined as follows:
@@ -61,7 +63,8 @@ From the `data_description.txt` file, the features can be defined as follows:
 The presence of heart disease in a patient is defined using the response variable `target` which takes the angiographic disease status determining the narrowing of any major heart vessels to diagnose heart disease using binary labels. As such, the problem can be defined as a **Binary Classification** problem.
 
 ---
-### 3. Exploratory Data Analysis (EDA)
+<a name="eda"></a>
+### 3. [Exploratory Data Analysis (EDA)](https://github.com/Brenz2000/SC1015-Mini-Project/blob/main/1_DataExploration_EDA.ipynb)
 In performing EDA, we observe if there exists any relationships and/or patterns between the features and the response variable `target` which may provide an indication of which features may contribute more to the model's predictive power during the classification stage. Additionally, EDA assists us with making decisions for data cleaning later on e.g., Is there a class imbalance in the response variable which would necessitate data resampling? Does the skewness of the data distribution for the features necessitate data normalization?
 
 For our EDA, we performed the following:
@@ -77,7 +80,8 @@ For our EDA, we performed the following:
     * Categorical variables against `target`: Chi-Square Test
 
 ---
-### 4. Data Preparation
+<a name="dp"></a>
+### 4. [Data Preparation](https://github.com/Brenz2000/SC1015-Mini-Project/blob/main/2_DataPreparation.ipynb)
 The data preparation stage helps to improve model accuracy and reduces the delay in training the model since irrelevant features and erroneous samples are removed. From the insights gleaned during EDA, we have gained a better understanding of the dataset such that we know how to clean and preprocess the dataset to prepare it for the binary classifier model later on.
 
 For data preparation, we performed the following:
@@ -87,7 +91,8 @@ For data preparation, we performed the following:
 4. **Feature Selection**: Using a `Random Forest Classifier` to determine the importances of features in contributing to the predictive model's decisions, such that we can decide which features to drop from our moderately high-dimensional dataset with '28' predictors.
 
 ---
-### 5. Model Selection
+<a name="ms"></a>
+### 5. [Model Selection](https://github.com/Brenz2000/SC1015-Mini-Project/blob/main/3_ModelSelection_GridSearch.ipynb)
 First, we trained a basic `Decision Tree Classifier` model on the cleaned dataset to determine the performance of a basic single-tree classifier, evaluated using Precision and Recall derived from a confusion matrix. Unfortunately, the decision tree classifier failed to meet our conditions for a "good" classifier; that is, Recall = 1.000, such that any patient with heart disease is not misidentified as having no heart disease. This is especially crucial in a medical setting, where people's lives can change drastically over a simple diagnosis.
 
 Using the preliminary decision tree classifier as an example, we employed `K-Fold Cross Validation` to compare the predictive performance of the many binary classification models out there on unseen data and pick only the few best ones with the highest mean accuracy score in making predictions. The Top 3 classifier models obtained throgh this method are unsurprisingly all implementations of ensemble learning techniques, which aggregate the outputs of multiple decision trees to make more precise predictions that have reduced errors and/or biases. These models include:
@@ -100,13 +105,15 @@ After narrowing down our choice of classifier model, we then used `GridSearchCV(
 As a result, the classifier model chosen after much deliberation was the `XG Boost` classifier.
 
 ---
-### 6. Model Prediction
+<a name="mp"></a>
+### 6. [Model Prediction](https://github.com/Brenz2000/SC1015-Mini-Project/blob/main/4_ModelPrediction.ipynb)
 Our chosen model 'XG Boost' was first performed on the train dataset, earning a perfect classification accuracy which sowed initial suspicions of overfitting. It was then tested on the test dataset, and was able to maintain a similar high prediction accuracy, which cleared doubts as our model was able to prove its reliability on unseen data as well.
 
 We then further check the effectiveness of the 'XG Boost' model by utilising the Receiver Operator Characteristic (ROC) curve alongside the Area Under the Curve (AUC) plot to evaluate the separability of binary classification models, that is, the model's ability to tell the different classes apart.
 
 ---
-### 7. Data-driven Insights & Recommendations
+<a name="ddir"></a>
+### 7. [Data-driven Insights & Recommendations](https://github.com/Brenz2000/SC1015-Mini-Project/blob/main/4_ModelPrediction.ipynb)
 With an accurate and reliable model, we can now analyse the importance of each predictor, providing us some insight into the contributions each feature has towards heart disease. Using feature importance, we plot a barplot, and condensed our findings into two main points:
 
 1. Patients are much more susceptible to heart disease if:
@@ -125,6 +132,7 @@ Finally, we settled on two main recommendations for our project:
 2. Our project may have benefitted from the inclusion of other lifestyle features in the dataset such frequency of excercise or eating habits which has been understood through general knowledge to affect the probability of heart disease as well: Our model may have been more well-rounded with more varied predictors in other areas.
 
 ---
+<a name="ref"></a>
 ### 8. References
 
 1. https://sebastianraschka.com/Articles/2014_python_lda.html
@@ -148,9 +156,3 @@ Finally, we settled on two main recommendations for our project:
 19. https://machinelearningmastery.com/knn-imputation-for-missing-values-in-machine-learning/
 20. https://machinelearningmastery.com/repeated-k-fold-cross-validation-with-python/
 21. https://scikit-learn.org/stable/auto_examples/ensemble/plot_forest_importances.html
-
----
-### Contributions
-1. @paaronoia (Aaron Lim) - Script, Slides, Video Editor, Presenter
-2. @Brenz2000 (Brendan Thye) - Data Exploration, EDA, Data Preparation, Model Selection, Model Prediction, Data-driven Insights and Recommendations
-3. @jjeennn (Chia Jia En) - EDA, Model Selection, Script, Slides
