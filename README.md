@@ -123,8 +123,8 @@ Finally, we settled on two main recommendations for our project:
 ---
 ### Contributions
 1. @paaronoia (Aaron Lim) - Script, Video Editor, Presenter
-2. Brendan Thye
-3. @jjeennn (Chia Jia En) - Model Selection, Script, Slides
+2. @Brenz2000 (Brendan Thye) - Data Exploration, EDA, Data Preparation, Model Selection, Model Prediction, Data-driven Insights and Reccomendations
+3. @jjeennn (Chia Jia En) - EDA, Model Selection, Script, Slides
 
 ---
 ### References
