@@ -74,3 +74,26 @@ For our EDA, we performed the following:
 
 ---
 ### 4. Data Preparation
+The data preparation stage helps to improve model accuracy and reduces the delay in training the model since irrelevant features and erroneous samples are removed. From the insights gleaned during EDA, we have gained a better understanding of the dataset such that we know how to clean and preprocess the dataset to prepare it for the binary classifier model later on.
+
+For data preparation, we performed the following:
+1. **Data Cleaning**: using `KNNImputer` to fill in the missing data for the variable `thal` and removing samples with undefined values for `ca`.
+2. **Fitting to a Normal Distribution**: Fitting skewed data distributions of continuous variables to a Gaussian distribution.
+3. **Data Standardization + One-Hot Encoding**: Rescaling all continuous variables to work on the same scale such that they are equally considered by the predictive model during training, and encoding the categorical variables into a numerical form (binary labels) such that it can be processed by a predictive model.
+4. **Feature Selection**: Using a `Random Forest Classifier` to determine the importances of features in contributing to the predictive model's decisions, such that we can decide which features to drop from our moderately high-dimensional dataset with '28' predictors.
+
+---
+### 5. Model Selection
+First, we trained a basic `Decision Tree Classifier` model on the cleaned dataset to determine the performance of a basic single-tree classifier, evaluated using Precision and Recall derived from a confusion matrix. Unfortunately, the decision tree classifier failed to meet our conditions for a "good" classifier; that is, Recall = 1.000, such that any patient with heart disease is not misidentified as having no heart disease. This is especially crucial in a medical setting, where people's lives can change drastically over a simple diagnosis.
+
+Using the preliminary decision tree classifier as an example, we employed `K-Fold Cross Validation` to compare the predictive performance of the many binary classification models out there on unseen data and pick only the few best ones with the highest mean accuracy score in making predictions. The Top 3 classifier models obtained throgh this method are unsurprisingly all implementations of ensemble learning techniques, which aggregate the outputs of multiple decision trees to make more precise predictions that have reduced errors and/or biases. These models include:
+1. Random Forest Classifier
+2. Bagging Classifier
+3. XG Boost Classifier
+
+After narrowing down our choice of classifier model, we then used `GridSearchCV()` to iteratively calculate for an optimal set of hyperparamters for each of the three models such that these hyperparameters can maximize the predictive quality of the classifier models. This is referred to as "fine-tuning" the classifier models, and after finding the best set of hyperparameters for each model, the fine-tuned models were evaluated against each other using the F1-score metric.
+
+As a result, the classifier model chosen after much deliberation was the `XG Boost` classifier.
+
+---
+### 6. Model Prediction
