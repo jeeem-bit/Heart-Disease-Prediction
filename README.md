@@ -97,3 +97,27 @@ As a result, the classifier model chosen after much deliberation was the `XG Boo
 
 ---
 ### 6. Model Prediction
+Our chosen model 'XG Boost' was first performed on the train dataset, earning a perfect classification accuracy which sowed initial suspicions of overfitting. It was then tested on the test dataset, and was able to maintain a similar high prediction accuracy, which cleared doubts as our model was able to prove its reliability on unseen data as well.
+
+We then further check the effectiveness of the 'XG Boost' model by utilising the Receiver Operator Characteristic (ROC) curve alongside the Area Under the Curve (AUC) plot to evaluate the separability of binary classification models, that is, the model's ability to tell the different classes apart.
+
+---
+### 7. Data-driven Insights & Recommendations
+With an accurate and reliable model, we can now analyse the importance of each predictor, providing us some insight into the contributions each feature has towards heart disease. Using feature importance, we plot a barplot, and condensed our findings into two main points:
+
+1. Patients are much more susceptible to heart disease if:
+      * more of the heart vessels, which supply blood flow to the heart, are blocked (due to cholesterol build-up in the walls of the vessels),
+      * they experience chest pain not only during exercise, but even in a resting state.
+
+2. Patients are much less susceptible to heart disease if:
+      * there is no prolonged or frequent chest pain in daily life
+      * if chest pain is ONLY experienced during physical activity, then it is less likely to be an indicator of heart-related problems and can be construed to mean more pressure is being put on the heart during exercise, which is normal.
+      * for patients with thalessemia, if it is of the reversible defect type, then they are at lower risk of heart disease as there is normal blood flow.
+      
+      
+Finally, we settled on two main recommendations for our project:
+
+1. Our project may have benefitted from basing off a less dated dataset
+      * People in the past might have had different lifestyle practices, trends and goods or services available compared to today. These might all play a part in the development of heart diseases that might not be relevant today. 
+      * While it might be more useful to diagnose modern people with a more recent dataset, 
+
