@@ -127,6 +127,24 @@ Finally, we settled on two main recommendations for our project:
 ---
 ### 8. References
 
+1. https://sebastianraschka.com/Articles/2014_python_lda.html
+2. https://stats.stackexchange.com/questions/264129/what-is-the-difference-between-bagging-and-random-forest-if-only-one-explanatory
+3. https://www.analyticsvidhya.com/blog/2021/06/understanding-random-forest/
+4. https://www.analyticsvidhya.com/blog/2018/06/comprehensive-guide-for-ensemble-models/
+5. https://towardsdatascience.com/top-10-binary-classification-algorithms-a-beginners-guide-feeacbd7a3e2
+6. https://machinelearningmastery.com/k-fold-cross-validation/
+7. https://www.analyticsvidhya.com/blog/2020/09/precision-recall-machine-learning/#False_Positive_Rate_&_True_Negative_Rate
+8. https://towardsdatascience.com/curse-of-dimensionality-a-curse-to-machine-learning-c122ee33bfeb
+9. https://www.analyticsvidhya.com/blog/2020/10/feature-selection-techniques-in-machine-learning/
+10. https://scikit-learn.org/stable/auto_examples/ensemble/plot_forest_importances.html
+11. https://machinelearningmastery.com/why-one-hot-encode-data-in-machine-learning/
+12. https://medium.com/analytics-vidhya/normal-distribution-and-machine-learning-ec9d3ca05070
+13. https://www.analyticsvidhya.com/blog/2020/07/what-is-skewness-statistics/
+14. https://machinelearningmastery.com/how-to-transform-data-to-fit-the-normal-distribution/
+15. https://www.analyticsvidhya.com/blog/2021/06/decoding-the-chi-square-test%E2%80%8A-%E2%80%8Ause-along-with-implementation-and-visualization/
+16. https://www.statology.org/point-biserial-correlation-python/
+17. https://towardsdatascience.com/heart-disease-uci-diagnosis-prediction-b1943ee835a7
+
 ---
 ### Contributions
 1. @paaronoia (Aaron Lim) - Script, Slides, Video Editor, Presenter
