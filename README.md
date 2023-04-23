@@ -117,7 +117,6 @@ With an accurate and reliable model, we can now analyse the importance of each p
       
 Finally, we settled on two main recommendations for our project:
 
-1. Our project may have benefitted from basing off a less dated dataset
-      * People in the past might have had different lifestyle practices, trends and goods or services available compared to today. These might all play a part in the development of heart diseases that might not be relevant today. 
-      * While it might be more useful to diagnose modern people with a more recent dataset, 
+1. Our project may have benefitted from basing off a less dated dataset: However we counter with our reasoning that as the dataset only includes biological characteristics which remains more stable over the course of time.
+2. Our dataset may have benefitted from the inclusion of other lifestyle features such frequency of excercise or eating habits which has been understood through past knowledge to affect the probability of heart disease as well: Our model could have been more well-rounded overall with more varied predictors
 
