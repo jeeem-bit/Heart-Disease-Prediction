@@ -121,10 +121,10 @@ Finally, we settled on two main recommendations for our project:
 2. Our project may have benefitted from the inclusion of other lifestyle features in the dataset such frequency of excercise or eating habits which has been understood through general knowledge to affect the probability of heart disease as well: Our model may have been more well-rounded with more varied predictors in other areas.
 
 ---
+### 8. References
+
+---
 ### Contributions
 1. @paaronoia (Aaron Lim) - Script, Slides, Video Editor, Presenter
 2. @Brenz2000 (Brendan Thye) - Data Exploration, EDA, Data Preparation, Model Selection, Model Prediction, Data-driven Insights and Recommendations
 3. @jjeennn (Chia Jia En) - EDA, Model Selection, Script, Slides
-
----
-### References
