@@ -5,18 +5,14 @@ Nanyang Technology University \
 Lab Group: A140 \
 Team: 8
 
-### Contributors
-1. Aaron Jerome Lim Li Yang (@paaronoia) - Script, Video Editor, Presenter
+Contributors
+1. Aaron Jerome Lim Li Yang
 2. Brendan Yap Ming Thye
 3. Chia Jia En
 
 ---
 ### Project Description
 This project aims to predict the presence of heart disease in individuals using the [Heart Disease Dataset](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset). This repository contains the source code (Jupyter Notebook `.ipynb` files), dataset, data description text file, and the final video presentation.
-
----
-### Video Presentation
-The presentation video can be found [here](https://www.youtube.com/watch?v=fL9KKVrMRds).
 
 ---
 ### Table of Contents
@@ -28,7 +24,6 @@ The presentation video can be found [here](https://www.youtube.com/watch?v=fL9KK
 6. Model Prediction
 7. Data Driven Insights & Recommendations
 8. References
-
 
 ---
 ### 1. Problem Definition
@@ -124,6 +119,12 @@ Finally, we settled on two main recommendations for our project:
 
 1. Our project may have benefitted from basing off a less dated dataset. However we counter with our reasoning that as the dataset only includes biological characteristics which remains more stable over the course of time.
 2. Our project may have benefitted from the inclusion of other lifestyle features in the dataset such frequency of excercise or eating habits which has been understood through general knowledge to affect the probability of heart disease as well: Our model may have been more well-rounded with more varied predictors in other areas.
+
+---
+### Contributions
+1. @paaronoia (Aaron Lim) - Script, Video Editor, Presenter
+2. Brendan Thye
+3. @jjeennn (Chia Jia En) - Model Selection, Script, Slides
 
 ---
 ### References
