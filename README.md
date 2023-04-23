@@ -117,6 +117,6 @@ With an accurate and reliable model, we can now analyse the importance of each p
       
 Finally, we settled on two main recommendations for our project:
 
-1. Our project may have benefitted from basing off a less dated dataset: However we counter with our reasoning that as the dataset only includes biological characteristics which remains more stable over the course of time.
-2. Our dataset may have benefitted from the inclusion of other lifestyle features such frequency of excercise or eating habits which has been understood through past knowledge to affect the probability of heart disease as well: Our model could have been more well-rounded overall with more varied predictors
+1. Our project may have benefitted from basing off a less dated dataset. However we counter with our reasoning that as the dataset only includes biological characteristics which remains more stable over the course of time.
+2. Our project may have benefitted from the inclusion of other lifestyle features in the dataset such frequency of excercise or eating habits which has been understood through general knowledge to affect the probability of heart disease as well: Our model may have been more well-rounded with more varied predictors in other areas.
 
