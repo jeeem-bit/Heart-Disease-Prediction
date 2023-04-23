@@ -144,6 +144,10 @@ Finally, we settled on two main recommendations for our project:
 15. https://www.analyticsvidhya.com/blog/2021/06/decoding-the-chi-square-test%E2%80%8A-%E2%80%8Ause-along-with-implementation-and-visualization/
 16. https://www.statology.org/point-biserial-correlation-python/
 17. https://towardsdatascience.com/heart-disease-uci-diagnosis-prediction-b1943ee835a7
+18. https://www.marsja.se/transform-skewed-data-using-square-root-log-box-cox-methods-in-python/
+19. https://machinelearningmastery.com/knn-imputation-for-missing-values-in-machine-learning/
+20. https://machinelearningmastery.com/repeated-k-fold-cross-validation-with-python/
+21. https://scikit-learn.org/stable/auto_examples/ensemble/plot_forest_importances.html
 
 ---
 ### Contributions
