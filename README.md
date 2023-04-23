@@ -17,6 +17,7 @@ This project aims to predict the presence of heart disease in individuals using 
 ---
 ### Video Presentation
 The presentation video can be found [here](https://www.youtube.com/watch?v=fL9KKVrMRds).
+
 ---
 ### Table of Contents
 1. Problem Definition
@@ -27,6 +28,7 @@ The presentation video can be found [here](https://www.youtube.com/watch?v=fL9KK
 6. Model Prediction
 7. Data Driven Insights & Recommendations
 8. References
+
 
 ---
 ### 1. Problem Definition
