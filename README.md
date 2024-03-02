@@ -6,9 +6,9 @@ Lab Group: A140 \
 Team: 8
 
 Contributors
-1. @paaronoia (Aaron Jerome Lim Li Yang) - Script, Slides, Video Editor, Presenter
-2. @Brenz2000 (Brendan Yap Ming Thye) - Data Exploration, EDA, Data Preparation, Model Selection, Model Prediction, Data-driven Insights and Recommendations
-3. @jjeennn (Chia Jia En) - EDA, Model Selection, Script, Slides
+1. @paaronoia (Aaron Jerome Lim Li Yang)
+2. @Brenz2000 (Brendan Yap Ming Thye) 
+3. @jjeennn (Chia Jia En)
 
 ---
 ### Project Description
